@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navs",
+  "info": {
+    "name": "nav",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "links": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "icons": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "navs",
+      "dominant": true
+    }
+  }
+}

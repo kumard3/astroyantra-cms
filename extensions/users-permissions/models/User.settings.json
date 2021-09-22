@@ -62,6 +62,10 @@
     "posts": {
       "via": "users",
       "collection": "post"
+    },
+    "navs": {
+      "via": "users",
+      "collection": "nav"
     }
   }
 }
